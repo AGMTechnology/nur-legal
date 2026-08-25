@@ -6,8 +6,10 @@
   site so the app and both store listings can link to stable URLs.
 - Same pattern as `AGMTechnology/holdit-legal`: Jekyll, `minima` theme, one
   markdown file per document with a fixed `permalink`.
-- **Read `CLAIMS.md` before publishing.** Six claims in these documents are not
-  true yet. They describe v1 tickets that have not shipped.
+- ⚠️ **Read the claim ledger before changing a sentence here.** It lives in the
+  **private** docs repo — `nur-docs/legal-claims.md` — because it names
+  unshipped tickets and internal review state. Six of its rows are still
+  PENDING or OWED.
 
 ## The URLs
 
@@ -53,21 +55,17 @@ its history and there is only ever one copy of a published sentence.
 ⚠️ The consequence is the same one `app/` has: a change here is committed
 **here**, and a session that only commits at the root leaves it untracked.
 
-### ⚠️ Not yet true — the interim state
+### ⚠️ This repository is PUBLIC. Everything committed here is readable by anyone.
 
-`AGMTechnology/nur-legal` **does not exist yet**. Creating a public repository
-under Ahmed's org and publishing legal text about his app is his call, not an
-agent's, so it has not been done.
+That is the point — a legal document behind a login is not published. But it
+means the ordinary engineering habits do not apply:
 
-Until it is, this directory is **tracked inside `nur-docs`** so the work is not
-sitting untracked on a disk. Cutting over is three commands and must happen in
-this order, or the table above becomes a lie:
-
-```bash
-gh repo create AGMTechnology/nur-legal --public --source=legal --push
-git rm -r --cached legal          # in nur-docs
-echo "legal/" >> .gitignore       # in nur-docs
-```
-
-Until that cutover, the URLs in `src/features/legal/links.ts` **404**. The app
-must not ship while they do — that is a row in `CLAIMS.md`.
+- **No internal state.** No ticket numbers, no "not built yet", no review
+  status, no TODOs. The claim ledger was briefly committed here and moved out
+  for exactly this reason: it recorded that no scholar reviewer is named, under
+  terms that promise scholar-reviewed content.
+- **No `git` history to hide behind.** A file removed at HEAD is still in the
+  history. If something private lands here, rewriting history is the fix and it
+  has to happen before anyone clones.
+- **Prose only.** If a sentence needs a caveat that cannot be published, the
+  sentence is wrong — fix the sentence, do not annotate it.
