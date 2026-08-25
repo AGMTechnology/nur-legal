@@ -13,7 +13,7 @@
 
 ## The URLs
 
-Once Pages is enabled on `main`, `/` :
+Live since 2026-08-25, served from `main`, `/`:
 
 | Document | URL |
 |---|---|
@@ -28,6 +28,30 @@ ones that go into App Store Connect and the Play Console.
 front matter, not derived from the filename, so renaming a file does not break a
 link that is already live in a shipped app — but changing a `permalink` does.
 An app on someone's phone cannot be updated to follow a moved URL.
+
+### ⚠️ When Nūr gets its own domain — read this before touching anything
+
+Ahmed's decision, 2026-08-25: **ship v1 on these `github.io` URLs and move to a
+real domain later.** That is safe — but only one route to it is safe, so it is
+written down here before somebody takes the other one.
+
+**Do this.** Add the domain to **this** Pages site (Settings → Pages → Custom
+domain, which writes a `CNAME` file into this repo). GitHub then serves the site
+at the new domain **and 301-redirects the old
+`agmtechnology.github.io/nur-legal/…` URLs to it.** Every app already on a phone
+keeps working, and both store listings keep resolving. The strings in
+`links.ts` can then be updated at leisure, for new installs only.
+
+**Never do this.** Publish the documents as fresh pages on the new website and
+repoint `links.ts` at them. That strands the URLs already in shipped apps, and
+**no release can fix a phone that already has them.**
+
+Three things must therefore stay true **forever**, not merely until launch:
+
+- the repository stays **public** — a private repo's Pages site needs a paid
+  plan, and losing it takes the URLs down;
+- the owner and name stay `AGMTechnology/nur-legal` — the path is in the URL;
+- the site is never deleted and recreated, which drops the redirect.
 
 ## Publishing
 
