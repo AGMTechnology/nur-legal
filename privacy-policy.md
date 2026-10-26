@@ -7,7 +7,9 @@ permalink: /privacy-policy
 # Privacy Policy
 
 **Nūr — Qur'an learning for the whole family**
-**Last updated: 25 August 2026**
+**Last updated: 25 October 2026**
+
+The [French version](fr/politique-de-confidentialite) of this policy is the reference. This English text is a faithful copy of it.
 
 ---
 
@@ -15,7 +17,7 @@ permalink: /privacy-policy
 
 - **Nūr works without an account.** You can install it, set up your family and
   learn for as long as you like without giving us anything at all.
-- **Your child's recordings never leave your phone.** Not to us, not to anyone.
+- **Recordings never leave your phone.** Not to us, not to anyone.
   They are stored in the app's private storage on your device and are never
   uploaded.
 - **A child never gets an account.** Only a parent does. Everything about a
@@ -48,7 +50,7 @@ progress lives on your phone, and the app is complete without a server.
 
 If you never create an account:
 
-- We hold **nothing** about you or your children.
+- We hold **nothing** about you or anyone in your household.
 - Your family's plan, progress, recordings and settings stay on your device.
 - Losing or wiping the phone loses them, because there is no copy anywhere else.
 
@@ -101,8 +103,8 @@ could hold one, by design and on purpose.
 
 The single exception is you: a parent, behind the parent PIN, can save a
 recording to their own phone or send it onward using their phone's share sheet,
-to a destination they choose. That is a parent making a decision about their own
-child's voice. Nothing is attached automatically, and no learner's name appears
+to a destination they choose. That is a parent deciding about a voice in their own
+household. Nothing is attached automatically, and no learner's name appears
 in a shared file unless you type one.
 
 The consequence is real and we accept it: **a lost, reset or replaced phone

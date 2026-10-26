@@ -7,7 +7,9 @@ permalink: /terms-of-service
 # Terms of Service
 
 **Nūr — Qur'an learning for the whole family**
-**Last updated: 25 August 2026**
+**Last updated: 25 October 2026**
+
+The [French version](fr/conditions-d-utilisation) of these Terms is the reference. This English text is a faithful copy of it.
 
 ---
 
@@ -168,8 +170,8 @@ You can delete your account from inside the app, in the parent area. Doing so
 removes your account and your family's plan from our servers, and wipes
 everything on the device including recordings.
 
-**It cannot be undone**, and there is no backup we can restore from. Please be
-sure.
+**It cannot be undone**, and there is no backup we can restore from. Take the
+time to think it over.
 
 ---
 
